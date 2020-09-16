@@ -305,10 +305,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 965860984564139779, guid: ddf57ccad9ea9ee42886d30603c2897f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569044582160771624, guid: ddf57ccad9ea9ee42886d30603c2897f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000169215298203007, guid: ddf57ccad9ea9ee42886d30603c2897f,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3839079239212513517, guid: ddf57ccad9ea9ee42886d30603c2897f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6682587225865685897, guid: ddf57ccad9ea9ee42886d30603c2897f,
         type: 3}
       propertyPath: m_Name
       value: AppleTree
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682587225865685897, guid: ddf57ccad9ea9ee42886d30603c2897f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8832869850506694781, guid: ddf57ccad9ea9ee42886d30603c2897f,
         type: 3}
@@ -325,6 +350,12 @@ PrefabInstance:
       propertyPath: chanceToChangeDirections
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 8832869850506694781, guid: ddf57ccad9ea9ee42886d30603c2897f,
+        type: 3}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 2367919987992888082, guid: b89156a609abcfd4fb3a059cd4ded733,
+        type: 3}
     - target: {fileID: 8872138038644618337, guid: ddf57ccad9ea9ee42886d30603c2897f,
         type: 3}
       propertyPath: m_LocalPosition.x
