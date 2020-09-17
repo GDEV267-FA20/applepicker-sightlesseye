@@ -21,9 +21,13 @@ public class AppleTree : MonoBehaviour
     // Rate at which Apples will be instantiated
     public float secondsBetweenAppleDrops = 1f;
 
+    // Rate at which game gets more difficult
+    public float secondsBetweenDifficultyIncrease = 5f;
+
     void Start() {
         // Dropping apples every second
         Invoke("DropApple", 2f);
+        Invoke("Harder", 7);
     }
 
     void Update() {
@@ -55,4 +59,15 @@ public class AppleTree : MonoBehaviour
         apple.transform.position = transform.position;
         Invoke("DropApple", secondsBetweenAppleDrops);
     }
+
+    void Harder() {
+        speed = speed * 1.2f;
+        secondsBetweenAppleDrops = secondsBetweenAppleDrops * .9f;
+        if(secondsBetweenAppleDrops <= 0f) {
+            secondsBetweenAppleDrops = .05f;
+        }
+        secondsBetweenDifficultyIncrease += 1f;
+        Invoke("Harder", secondsBetweenDifficultyIncrease);
+    }
+
 }
